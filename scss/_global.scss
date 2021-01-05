@@ -200,6 +200,15 @@ footer{
 }
 .imgTips{
   margin-left: -200px;
+  margin-bottom: 20px;
+}
+.imgCongelados{
+  display: flex;
+  margin-left: 3px;  
+  margin-right: 3px;
+  img{
+    justify-content: space-between;
+  }
 }
 .articulosTips{
   margin-top: 25px;
