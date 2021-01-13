@@ -25,6 +25,7 @@ html{
 .barraNavegacion{
   display: flex;
   justify-content: space-around;
+  align-items: center;
   border: black;
   nav{
     background-image: linear-gradient(#fbecb4, #FDFEF1);
@@ -42,6 +43,7 @@ html{
 }
 ul{
   text-align: center;
+  align-items: center;
   color: #2b2f17;
   li{
     display: inline-block;
@@ -185,7 +187,7 @@ footer{
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
   font-size: xx-large;
   font-weight: bolder;
-  transform: translate(320px, -25px);
+  transform: translate(310px, -25px);
   color: #FDFEF1;    
   width: 60%;
   h1{
@@ -194,7 +196,7 @@ footer{
     margin-top: 25px;
   }
   p{
-    color: black;
+    color:$black;
     font-size: medium;
   }
 }
@@ -266,9 +268,29 @@ footer{
   max-width: 75%;
   transform: translate(230px);
   padding-left: -20px;
-  border-left: double black;
-  border-right: double black;
+  border-left: double $black;
+  border-right: double $black;
 }
 .positionProd{
   transform: translate(-120px);
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
 }
