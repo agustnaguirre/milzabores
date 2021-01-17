@@ -327,6 +327,7 @@ footer{
   .fondoClaro{
     background-color: #fbecb4;
     max-width: 75%;
+    height: 100%;
     transform: translate(80px);
     padding-left: -20px;
     border-left: double $black;
@@ -380,7 +381,6 @@ footer{
         height: 120px;
         transform: translate(15px, 30px);
       }
-    }
   }
   .titulosTips{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;   
@@ -397,8 +397,8 @@ footer{
     h2{
       color:black;
       font-size: 25px;
-      margin-top: 25px;
-      margin-left: -150px;
+      margin-top: 60px;
+      margin-left: -170px;
     }
     p{
       color:$black;
@@ -410,14 +410,35 @@ footer{
     margin-top: 25px;    
     margin-left: 25px;
     img{
-      margin-top: 25px;    
-      margin-left: 25px;
+      margin-top: 2px;    
+      margin-left: 60px;
       width: 200px;
       height: 171px;
     }
-
+  }
+    .tituloConocenos{
+      font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+      font-weight: bolder;
+      transform: translate(320px, -30px);
+      color: #FDFEF1;
+      width: 60%;
+    }
+    .articulosConocenos{
+        color: rgb(44, 44, 44);
+        font-size: 25px;
+        display: inline-block;
+        transform: translate(-50px);
+        margin-top: 25px;
+      }
+    }
+    .imgPrincipalConocenos{
+      img{
+        width: 400px;
+        height: 120px;
+        transform: translate(15px, 30px);
+        }
+    } 
 }
-
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   
@@ -430,10 +451,5 @@ footer{
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-    .articulosTips{
-    p{
-      margin-top: 25px;
-      margin-left: -200px;
-    }
-  }
+
 }
