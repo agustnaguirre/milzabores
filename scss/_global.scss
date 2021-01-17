@@ -81,9 +81,15 @@ ul{
   div{
     padding: 15px;
     a{
-       img:hover{
+      img{
+        width:150px;
+        height: 150px;
+        border-color: black;
+      }
+      img:hover{
         transform: scale(1.5, 1.5);
         transition: 1s;
+        border-color: black;
       }
     }
   }
@@ -109,12 +115,15 @@ footer{
   padding: 10px;
   background-image: linear-gradient(#FDFEF1, #fbecb4);
   p{
-    text-align:center
+    text-align:center;
+    color: black;
   }
 }
 .imgPrincipalProd{
   div{
     img{
+      width:1000px;
+      height:300px;
       transform: translate(240px, 30px);
     }
   }
@@ -276,13 +285,110 @@ footer{
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
+@media only screen and(max-width: 576px) {
+  .milZabores{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
+    padding-top: 60px;
+    padding-right: 10px;
+    font-size: 30px;
+  }
+  .veganos{
+    font-family: 'Gagalin', 'calibri';
+    padding-top: 60px;
+    font-size: 30px;
+  }
+  #logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 30px;
+    padding-right: 25px;
+    margin-top: 30px;
+    background-color: #fbecb4;
+    height: 200px;
+    border-style: double;
+    border-color: black;
+    div{
+      padding: 15px;
+      a{
+        img{
+          height: 100px;
+          width: 100px;
+        }
+        
+         img:hover{
+          transform: scale(1.5, 1.5);
+          transition: 1s;
+        }
+      }
+    }
+  }
+  .barraNavegacion{
+    h3{
+      font-size: 20px;
+    }
+  }
+  #carouselExampleIndicators{
+    display: flex;
+    align-items: center;
+  }
+  .fondoClaro{
+    background-color: #fbecb4;
+    max-width: 75%;
+    transform: translate(80px);
+    padding-left: -20px;
+    border-left: double $black;
+    border-right: double $black;
+  }
+  .imgPrincipalProd{
+    div{
+      img{
+        width: 400px;
+        height: 120px;
+        transform: translate(130px, 30px);
+      }
+    }
+  }
+  .tituloProductos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    transform: translate(135px, -15px);
+    color: #FDFEF1;
+  }
+  .productos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    transform: translate(250px, 1px);
+    margin-top: 30px;
+    font-weight: bolder;
+    div{
+      p{
+        font-size: x-large;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-bottom: 4px;
+      }
+      h2{
+        display: inline-block;
+        font-size: medium;
+      }
+    }
+  }
+  #prodGrillas{
+    display: grid;
+    grid-template-areas: 
+    "prod1 prod2 prod3 prod4"
+    "prod5 prod6 prod7 prod8";
+    grid-template-columns: 300px 300px 300px 250px;
+    grid-template-rows: 300px 300px 300px 250px;
+  }
+
 
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-
+  
 }
 
 // Large devices (desktops, 992px and up)
@@ -294,3 +400,4 @@ footer{
 @media (min-width: 1200px) {
 
 }
+
