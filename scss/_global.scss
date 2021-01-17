@@ -213,14 +213,6 @@ footer{
   margin-left: -200px;
   margin-bottom: 20px;
 }
-.imgCongelados{
-  display: flex;
-  margin-left: 3px;  
-  margin-right: 3px;
-  img{
-    justify-content: space-between;
-  }
-}
 .articulosTips{
   margin-top: 25px;
 }
@@ -382,7 +374,47 @@ footer{
     grid-template-columns: 300px 300px 300px 250px;
     grid-template-rows: 300px 300px 300px 250px;
   }
-
+  .imgPrincipalTips{
+      img{
+        width: 400px;
+        height: 120px;
+        transform: translate(15px, 30px);
+      }
+    }
+  }
+  .titulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;   
+    font-weight: bolder;
+    transform: translate(310px, -25px);
+    color: #FDFEF1;    
+    width: 60%;
+    h1{
+      transform: translate(-290px, -7px);
+      color: #FDFEF1; 
+      font-size: xx-large;
+      
+    }    
+    h2{
+      color:black;
+      font-size: 25px;
+      margin-top: 25px;
+      margin-left: -150px;
+    }
+    p{
+      color:$black;
+      font-size: medium;
+    }
+  }
+  .articulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
+    img{
+      margin-top: 25px;    
+      margin-left: 25px;
+      width: 200px;
+      height: 171px;
+    }
 
 }
 
@@ -398,6 +430,10 @@ footer{
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
+    .articulosTips{
+    p{
+      margin-top: 25px;
+      margin-left: -200px;
+    }
+  }
 }
-
