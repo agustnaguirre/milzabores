@@ -120,19 +120,17 @@ footer{
   }
 }
 .imgPrincipalProd{
-  div{
-    img{
-      width:1000px;
-      height:300px;
-      transform: translate(240px, 30px);
-    }
+  img{
+    width: 1000px;
+    height: 300px;
+    transform: translate(350px, 20px);
   }
 }
 .tituloProductos{
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
   font-size: xx-large;
   font-weight: bolder;
-  transform: translate(250px, -30px);
+  transform: translate(355px, -30px);
   color: #FDFEF1;
 }
 .productos{
@@ -186,62 +184,67 @@ footer{
   grid-area: prod8;
 }
 .imgPrincipalTips{
-  div{
-    img{
-      transform: translate(300px, 20px);
-    }
+  img{
+    width: 1000px;
+    height: 300px;
+    transform: translate(230px, 20px);
   }
 }
 .titulosTips{
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-  font-size: xx-large;
   font-weight: bolder;
   transform: translate(310px, -25px);
   color: #FDFEF1;    
   width: 60%;
   h1{
-    color:black;
-    font-size: 25px;
+    color: #FDFEF1;
     margin-top: 25px;
+    font-size: 40px;
+    transform: translate(-60px, -30px);
+  }
+  h2{
+    font-family: "Gagalin";
+    color:black;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-left: -170px;
   }
   p{
     color:$black;
     font-size: medium;
   }
 }
-.imgTips{
-  margin-left: -200px;
-  margin-bottom: 20px;
-}
 .articulosTips{
   margin-top: 25px;
-}
-.tituloConocenos{
-  font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-  font-size: xx-large;
-  font-weight: bolder;
-  transform: translate(320px, -30px);
-  color: #FDFEF1;
-  width: 60%;
-  p{
-    color: rgb(44, 44, 44);
-    font-size: 25px;
-    display: inline-block;
-    transform: translate(-50px);
-    margin-top: 25px;
+  margin-left: 30px;
+  img{
+    margin-left: -200px;
+    margin-bottom: 20px;
+    transform: translate(300px);
   }
 }
 .imgPrincipalConocenos{
-  div{
-    img{
-      font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-      font-size: 25px;
-      font-weight: bolder;
-      transform: translate(310px, 20px);
-      color: #FDFEF1;
-      width: 60%;
-    }
-  }  
+  img{
+    width: 1000px;
+    height: 300px;
+    transform: translate(230px, 20px);
+  }
+}
+.tituloConocenos{
+  font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+  font-weight: bolder;
+  color: #FDFEF1;
+  h1{
+    transform: translate(-60px, -5px);
+    color: #FDFEF1; 
+    font-size: 40px; 
+  } 
+}
+.articulosConocenos{
+  font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+  margin-top: 25px;    
+  margin-left: 25px;
+  font-size: 25px;
 }
 .contactanos{
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
@@ -327,7 +330,224 @@ footer{
   .fondoClaro{
     background-color: #fbecb4;
     max-width: 75%;
-    height: 100%;
+    max-height: 100%;
+    transform: translate(80px);
+    padding-left: -20px;
+    border-left: double $black;
+    border-right: double $black;
+  }
+  .imgPrincipalProd{
+    img{
+      width: 400px;
+      height: 120px;
+      transform: translate(130px, 30px);
+    }
+  }
+  .tituloProductos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    transform: translate(135px, -15px);
+    color: #FDFEF1;
+  }
+  .productos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    transform: translate(175px, 1px);
+    margin-top: 30px;
+    font-weight: bolder;
+    div{
+      p{
+        font-size: large;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-bottom: 4px;
+      }
+      h2{
+        display: inline-block;
+        font-size: small;
+      }
+      img{
+        width: 100px;
+        height: 75px;
+      }
+    }
+  }
+  #prodGrillas{
+    display: grid;
+    grid-template-areas: 
+    "prod1 prod2"
+    "prod3 prod4"
+    "prod5 prod6"
+    "prod7 prod8";
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px 150px 125px 150px 125px;
+  }
+  .prod1 {
+    grid-area: prod1;
+  }
+  .prod2 {
+    grid-area: prod2;
+    padding-left: 20px;
+  }
+  .prod3 {
+    grid-area: prod3;
+    padding-top: 30px
+  }
+  .prod4 {
+    grid-area: prod4;
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  .prod5 {
+    grid-area: prod5;
+    padding-top: 70px;
+  }
+  .prod6 {
+    grid-area: prod6;
+    padding-top: 70px;
+    padding-left: 20px;
+  }
+  .prod7 {
+    grid-area: prod7;
+    padding-top: 100px;
+  }
+  .prod8 {
+    grid-area: prod8;
+    padding-top: 100px;
+    padding-left: 20px;
+  }
+  .imgPrincipalTips{
+      img{
+        width: 400px;
+        height: 120px;
+        transform: translate(15px, 30px);
+      }
+  }
+  .titulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;   
+    font-weight: bolder;
+    transform: translate(310px, -25px);
+    color: #FDFEF1;    
+    width: 60%;
+    h1{
+      transform: translate(-290px, -7px);
+      color: #FDFEF1; 
+      font-size: xx-large; 
+    }    
+    h2{
+      font-family: "Gagalin"; 
+      color:black;
+      font-size: 25px;
+      margin-top: 60px;
+      margin-left: -170px;
+    }
+    p{
+      color:$black;
+      font-size: medium;
+    }
+  }
+  .articulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
+    img{
+      margin-top: 2px;    
+      margin-left: 60px;
+      width: 200px;
+      height: 171px;
+    }
+  }
+  .tituloConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-weight: bolder;
+    transform: translate(310px, -25px);
+    color: #FDFEF1;
+    width: 60%;
+    h1{
+      transform: translate(-290px, 12px);
+      color: #FDFEF1; 
+      font-size: xx-large; 
+    } 
+  }
+  .articulosConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
+  }
+  .imgPrincipalConocenos{
+    img{
+      width: 400px;
+      height: 120px;
+      transform: translate(15px, 30px);
+    }
+  }
+  .contactanos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+        font-size: 25px;
+        font-weight: normal;
+        margin-top: 80px;
+        width: 80%;
+        transform: translate(50px, -50px);  
+        p{
+          font-size: 20px;
+        }
+        form{
+          font-size: 20px;
+        }
+      }
+}
+// Medium devices (tablets, 768px and up)
+@media only screen and(max-width: 768px) {
+  .milZabores{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
+    padding-top: 60px;
+    padding-right: 10px;
+    font-size: 30px;
+  }
+  .veganos{
+    font-family: 'Gagalin', 'calibri';
+    padding-top: 60px;
+    font-size: 30px;
+  }
+  #logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 30px;
+    padding-right: 25px;
+    margin-top: 30px;
+    background-color: #fbecb4;
+    height: 200px;
+    border-style: double;
+    border-color: black;
+    div{
+      padding: 15px;
+      a{
+        img{
+          height: 100px;
+          width: 100px;
+        }
+        
+         img:hover{
+          transform: scale(1.5, 1.5);
+          transition: 1s;
+        }
+      }
+    }
+  }
+  .barraNavegacion{
+    h3{
+      font-size: 20px;
+    }
+  }
+  #carouselExampleIndicators{
+    display: flex;
+    align-items: center;
+  }
+  .fondoClaro{
+    background-color: #fbecb4;
+    max-width: 75%;
+    max-height: 100%;
     transform: translate(80px);
     padding-left: -20px;
     border-left: double $black;
@@ -351,29 +571,69 @@ footer{
   }
   .productos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    transform: translate(250px, 1px);
+    transform: translate(175px, 1px);
     margin-top: 30px;
     font-weight: bolder;
     div{
       p{
-        font-size: x-large;
+        font-size: large;
         font-weight: bold;
         margin-top: 5px;
         margin-bottom: 4px;
       }
       h2{
         display: inline-block;
-        font-size: medium;
+        font-size: small;
+      }
+      img{
+        width: 100px;
+        height: 75px;
       }
     }
   }
   #prodGrillas{
     display: grid;
     grid-template-areas: 
-    "prod1 prod2 prod3 prod4"
-    "prod5 prod6 prod7 prod8";
-    grid-template-columns: 300px 300px 300px 250px;
-    grid-template-rows: 300px 300px 300px 250px;
+    "prod1 prod2"
+    "prod3 prod4"
+    "prod5 prod6"
+    "prod7 prod8";
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px 150px 125px 150px 125px;
+  }
+  .prod1 {
+    grid-area: prod1;
+  }
+  .prod2 {
+    grid-area: prod2;
+    padding-left: 20px;
+  }
+  .prod3 {
+    grid-area: prod3;
+    padding-top: 30px
+  }
+  .prod4 {
+    grid-area: prod4;
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  .prod5 {
+    grid-area: prod5;
+    padding-top: 70px;
+  }
+  .prod6 {
+    grid-area: prod6;
+    padding-top: 70px;
+    padding-left: 20px;
+  }
+  .prod7 {
+    grid-area: prod7;
+    padding-top: 100px;
+  }
+  .prod8 {
+    grid-area: prod8;
+    padding-top: 100px;
+    padding-left: 20px;
   }
   .imgPrincipalTips{
       img{
@@ -391,10 +651,10 @@ footer{
     h1{
       transform: translate(-290px, -7px);
       color: #FDFEF1; 
-      font-size: xx-large;
-      
+      font-size: xx-large; 
     }    
     h2{
+      font-family: "Gagalin"; 
       color:black;
       font-size: 25px;
       margin-top: 60px;
@@ -416,40 +676,488 @@ footer{
       height: 171px;
     }
   }
-    .tituloConocenos{
-      font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-      font-weight: bolder;
-      transform: translate(320px, -30px);
-      color: #FDFEF1;
-      width: 60%;
-    }
-    .articulosConocenos{
-        color: rgb(44, 44, 44);
-        font-size: 25px;
-        display: inline-block;
-        transform: translate(-50px);
-        margin-top: 25px;
-      }
-    }
-    .imgPrincipalConocenos{
+  .tituloConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-weight: bolder;
+    transform: translate(310px, -25px);
+    color: #FDFEF1;
+  width: 60%;
+    h1{
+      transform: translate(-290px, 12px);
+      color: #FDFEF1; 
+      font-size: xx-large; 
+    } 
+  }
+  .articulosConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
+  }
+  .imgPrincipalConocenos{
+    div{
       img{
         width: 400px;
         height: 120px;
         transform: translate(15px, 30px);
-        }
-    } 
+      }
+    }
+  }
+  .contactanos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 80px;
+    width: 80%;
+    transform: translate(50px, -50px);  
+    p{
+      font-size: 20px;
+    }
+    form{
+      font-size: 20px;
+    }
+  }  
 }
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  
-}
-
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media only screen and(max-width: 992px) {
+  .milZabores{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
+    padding-top: 60px;
+    padding-right: 10px;
+    font-size: 30px;
+  }
+  .veganos{
+    font-family: 'Gagalin', 'calibri';
+    padding-top: 60px;
+    font-size: 30px;
+  }
+  #logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 30px;
+    padding-right: 25px;
+    margin-top: 30px;
+    background-color: #fbecb4;
+    height: 200px;
+    border-style: double;
+    border-color: black;
+    div{
+      padding: 15px;
+      a{
+        img{
+          height: 100px;
+          width: 100px;
+        }
+        
+         img:hover{
+          transform: scale(1.5, 1.5);
+          transition: 1s;
+        }
+      }
+    }
+  }
+  .barraNavegacion{
+    h3{
+      font-size: 20px;
+    }
+  }
+  #carouselExampleIndicators{
+    display: flex;
+    align-items: center;
+  }
+  .fondoClaro{
+    background-color: #fbecb4;
+    max-width: 75%;
+    max-height: 100%;
+    transform: translate(80px);
+    padding-left: -20px;
+    border-left: double $black;
+    border-right: double $black;
+  }
+  .imgPrincipalProd{
+    div{
+      img{
+        width: 400px;
+        height: 120px;
+        transform: translate(130px, 30px);
+      }
+    }
+  }
+  .tituloProductos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    transform: translate(135px, -15px);
+    color: #FDFEF1;
+  }
+  .productos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    transform: translate(175px, 1px);
+    margin-top: 30px;
+    font-weight: bolder;
+    div{
+      p{
+        font-size: large;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-bottom: 4px;
+      }
+      h2{
+        display: inline-block;
+        font-size: small;
+      }
+      img{
+        width: 100px;
+        height: 75px;
+      }
+    }
+  }
+  #prodGrillas{
+    display: grid;
+    grid-template-areas: 
+    "prod1 prod2"
+    "prod3 prod4"
+    "prod5 prod6"
+    "prod7 prod8";
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px 150px 125px 150px 125px;
+  }
+  .prod1 {
+    grid-area: prod1;
+  }
+  .prod2 {
+    grid-area: prod2;
+    padding-left: 20px;
+  }
+  .prod3 {
+    grid-area: prod3;
+    padding-top: 30px
+  }
+  .prod4 {
+    grid-area: prod4;
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  .prod5 {
+    grid-area: prod5;
+    padding-top: 70px;
+  }
+  .prod6 {
+    grid-area: prod6;
+    padding-top: 70px;
+    padding-left: 20px;
+  }
+  .prod7 {
+    grid-area: prod7;
+    padding-top: 100px;
+  }
+  .prod8 {
+    grid-area: prod8;
+    padding-top: 100px;
+    padding-left: 20px;
+  }
+  .imgPrincipalTips{
+      img{
+        width: 400px;
+        height: 120px;
+        transform: translate(15px, 30px);
+      }
+  }
+  .titulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;   
+    font-weight: bolder;
+    transform: translate(310px, -25px);
+    color: #FDFEF1;    
+    width: 60%;
+    h1{
+      transform: translate(-290px, -7px);
+      color: #FDFEF1; 
+      font-size: xx-large; 
+    }    
+    h2{
+      font-family: "Gagalin"; 
+      color:black;
+      font-size: 25px;
+      margin-top: 60px;
+      margin-left: -170px;
+    }
+    p{
+      color:$black;
+      font-size: medium;
+    }
+  }
+  .articulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
+    img{
+      margin-top: 2px;    
+      margin-left: 60px;
+      width: 200px;
+      height: 171px;
+    }
+  }
+  .tituloConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-weight: bolder;
+    transform: translate(310px, -25px);
+    color: #FDFEF1;
+  width: 60%;
+    h1{
+      transform: translate(-290px, 12px);
+      color: #FDFEF1; 
+      font-size: xx-large; 
+    } 
 
-}
+  }
+  .articulosConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
+    }
+  }
+  .imgPrincipalConocenos{
+    div{
+      img{
+        width: 400px;
+        height: 120px;
+        transform: translate(15px, 30px);
+      }
+    }  
+  }
+  .contactanos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 80px;
+    width: 80%;
+    transform: translate(50px, -50px);  
+    p{
+      font-size: 20px;
+    }
+    form{
+      font-size: 20px;
+    }
+  }  
+
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+@media only screen and(max-width: 1200px) {
+  .milZabores{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
+    padding-top: 60px;
+    padding-right: 10px;
+    font-size: 30px;
+  }
+  .veganos{
+    font-family: 'Gagalin', 'calibri';
+    padding-top: 60px;
+    font-size: 30px;
+  }
+  #logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 30px;
+    padding-right: 25px;
+    margin-top: 30px;
+    background-color: #fbecb4;
+    height: 200px;
+    border-style: double;
+    border-color: black;
+    div{
+      padding: 15px;
+      a{
+        img{
+          height: 100px;
+          width: 100px;
+        }
+        
+         img:hover{
+          transform: scale(1.5, 1.5);
+          transition: 1s;
+        }
+      }
+    }
+  }
+  .barraNavegacion{
+    h3{
+      font-size: 20px;
+    }
+  }
+  #carouselExampleIndicators{
+    display: flex;
+    align-items: center;
+  }
+  .fondoClaro{
+    background-color: #fbecb4;
+    max-width: 75%;
+    max-height: 100%;
+    transform: translate(80px);
+    padding-left: -20px;
+    border-left: double $black;
+    border-right: double $black;
+  }
+  .imgPrincipalProd{
+    div{
+      img{
+        width: 400px;
+        height: 120px;
+        transform: translate(130px, 30px);
+      }
+    }
+  }
+  .tituloProductos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    transform: translate(135px, -15px);
+    color: #FDFEF1;
+  }
+  .productos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    transform: translate(175px, 1px);
+    margin-top: 30px;
+    font-weight: bolder;
+    div{
+      p{
+        font-size: large;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-bottom: 4px;
+      }
+      h2{
+        display: inline-block;
+        font-size: small;
+      }
+      img{
+        width: 100px;
+        height: 75px;
+      }
+    }
+  }
+  #prodGrillas{
+    display: grid;
+    grid-template-areas: 
+    "prod1 prod2"
+    "prod3 prod4"
+    "prod5 prod6"
+    "prod7 prod8";
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px 150px 125px 150px 125px;
+  }
+  .prod1 {
+    grid-area: prod1;
+  }
+  .prod2 {
+    grid-area: prod2;
+    padding-left: 20px;
+  }
+  .prod3 {
+    grid-area: prod3;
+    padding-top: 30px
+  }
+  .prod4 {
+    grid-area: prod4;
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  .prod5 {
+    grid-area: prod5;
+    padding-top: 70px;
+  }
+  .prod6 {
+    grid-area: prod6;
+    padding-top: 70px;
+    padding-left: 20px;
+  }
+  .prod7 {
+    grid-area: prod7;
+    padding-top: 100px;
+  }
+  .prod8 {
+    grid-area: prod8;
+    padding-top: 100px;
+    padding-left: 20px;
+  }
+  .imgPrincipalTips{
+      img{
+        width: 400px;
+        height: 120px;
+        transform: translate(15px, 30px);
+      }
+  }
+  .titulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;   
+    font-weight: bolder;
+    transform: translate(310px, -25px);
+    color: #FDFEF1;    
+    width: 60%;
+    h1{
+      transform: translate(-290px, -7px);
+      color: #FDFEF1; 
+      font-size: xx-large; 
+    }    
+    h2{
+      font-family: "Gagalin"; 
+      color:black;
+      font-size: 25px;
+      margin-top: 60px;
+      margin-left: -170px;
+    }
+    p{
+      color:$black;
+      font-size: medium;
+    }
+  }
+  .articulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
+    img{
+      margin-top: 2px;    
+      margin-left: 60px;
+      width: 200px;
+      height: 171px;
+    }
+  }
+  .tituloConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-weight: bolder;
+    transform: translate(310px, -25px);
+    color: #FDFEF1;
+  width: 60%;
+    h1{
+      transform: translate(-290px, 12px);
+      color: #FDFEF1; 
+      font-size: xx-large; 
+    } 
 
-}
+  }
+  .articulosConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
+    }
+  }
+  .imgPrincipalConocenos{
+    img{
+      width: 400px;
+      height: 120px;
+      transform: translate(15px, 30px);
+    }
+  }
+  .contactanos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 80px;
+    width: 80%;
+    transform: translate(50px, -50px);  
+    p{
+      font-size: 20px;
+    }
+    form{
+      font-size: 20px;
+    }
+  }  
