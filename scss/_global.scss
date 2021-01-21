@@ -120,24 +120,28 @@ footer{
   }
 }
 .imgPrincipalProd{
+  display: flex;
   img{
     width: 1000px;
     height: 300px;
-    transform: translate(350px, 20px);
+    margin: auto;
   }
 }
 .tituloProductos{
+  display: flex;
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
   font-size: xx-large;
-  font-weight: bolder;
-  transform: translate(355px, -30px);
-  color: #FDFEF1;
+  margin-top: -45px;
+  margin-left: 17%;
+  h1{
+    color: #FDFEF1;
+  }
 }
 .productos{
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-  transform: translate(250px, 1px);
-  margin-top: 30px;
   font-weight: bolder;
+  margin-top: 45px;
+  margin-left: 150px;
   div{
     p{
       font-size: x-large;
@@ -151,6 +155,7 @@ footer{
     }
   }
 }
+
 #prodGrillas{
   display: grid;
   grid-template-areas: 
@@ -184,30 +189,31 @@ footer{
   grid-area: prod8;
 }
 .imgPrincipalTips{
+  display: flex;
   img{
     width: 1000px;
     height: 300px;
-    transform: translate(230px, 20px);
+    margin: auto;
   }
 }
 .titulosTips{
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
   font-weight: bolder;
-  transform: translate(310px, -25px);
   color: #FDFEF1;    
   width: 60%;
   h1{
     color: #FDFEF1;
-    margin-top: 25px;
+    margin-top: -45px;
+    margin-left: 25%;
     font-size: 40px;
-    transform: translate(-60px, -30px);
   }
   h2{
     font-family: "Gagalin";
     color:black;
     font-size: 40px;
-    margin-top: 60px;
-    margin-left: -170px;
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 40px;
   }
   p{
     color:$black;
@@ -218,16 +224,15 @@ footer{
   margin-top: 25px;
   margin-left: 30px;
   img{
-    margin-left: -200px;
-    margin-bottom: 20px;
-    transform: translate(300px);
+    margin: auto;
   }
 }
 .imgPrincipalConocenos{
+  display: flex;
   img{
     width: 1000px;
     height: 300px;
-    transform: translate(230px, 20px);
+    margin: auto;
   }
 }
 .tituloConocenos{
@@ -235,14 +240,15 @@ footer{
   font-weight: bolder;
   color: #FDFEF1;
   h1{
-    transform: translate(-60px, -5px);
-    color: #FDFEF1; 
-    font-size: 40px; 
+    color: #FDFEF1;
+    margin-top: -45px;
+    margin-left: 15%;
+    font-size: 40px;
   } 
 }
 .articulosConocenos{
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-  margin-top: 25px;    
+  margin-top: 25px;
   margin-left: 25px;
   font-size: 25px;
 }
@@ -272,15 +278,21 @@ footer{
   max-width: 75%;
   transform: translate(230px);
   padding-left: -20px;
-  border-left: double $black;
-  border-right: double $black;
+  border-left: double black;
+  border-right: double black;
 }
-.positionProd{
-  transform: translate(-120px);
+.fa-instagram-square{
+  color: #2b2f17; 
+  font-size: xx-large;
+  margin-right: -1500px;
+}
+.fa-whatsapp-square{
+  color: #2b2f17;
+  font-size: xx-large;
 }
 
-// Small devices (landscape phones, 576px and up)
-@media only screen and(max-width: 576px) {
+// Extra small devices (portrait phones)
+@media (max-width: 575.98px) {
   .milZabores{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
     padding-top: 60px;
@@ -340,20 +352,18 @@ footer{
     img{
       width: 400px;
       height: 120px;
-      transform: translate(130px, 30px);
     }
   }
   .tituloProductos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-size: 25px;
     font-weight: bolder;
-    transform: translate(135px, -15px);
     color: #FDFEF1;
   }
   .productos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    transform: translate(175px, 1px);
     margin-top: 30px;
+    margin-left: 50px;
     font-weight: bolder;
     div{
       p{
@@ -420,26 +430,24 @@ footer{
       img{
         width: 400px;
         height: 120px;
-        transform: translate(15px, 30px);
       }
   }
   .titulosTips{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;   
     font-weight: bolder;
-    transform: translate(310px, -25px);
     color: #FDFEF1;    
     width: 60%;
     h1{
-      transform: translate(-290px, -7px);
       color: #FDFEF1; 
       font-size: xx-large; 
+      margin-left: 20px;
     }    
     h2{
       font-family: "Gagalin"; 
       color:black;
       font-size: 25px;
       margin-top: 60px;
-      margin-left: -170px;
+      margin-left: 120px;
     }
     p{
       color:$black;
@@ -450,36 +458,33 @@ footer{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     margin-top: 25px;    
     margin-left: 25px;
-    img{
-      margin-top: 2px;    
-      margin-left: 60px;
+    img{   
+      margin-left: 50px;
       width: 200px;
       height: 171px;
+    }
+  }
+  .imgPrincipalConocenos{
+    img{
+      width: 400px;
+      height: 120px;
     }
   }
   .tituloConocenos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-weight: bolder;
-    transform: translate(310px, -25px);
     color: #FDFEF1;
     width: 60%;
     h1{
-      transform: translate(-290px, 12px);
       color: #FDFEF1; 
       font-size: xx-large; 
+      margin-left: 20px;
     } 
   }
   .articulosConocenos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     margin-top: 25px;    
     margin-left: 25px;
-  }
-  .imgPrincipalConocenos{
-    img{
-      width: 400px;
-      height: 120px;
-      transform: translate(15px, 30px);
-    }
   }
   .contactanos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
@@ -496,8 +501,8 @@ footer{
         }
       }
 }
-// Medium devices (tablets, 768px and up)
-@media only screen and(max-width: 768px) {
+// Small devices (landscape phones, 576px and up)
+@media (min-width:576px) and (max-width: 767.98px) {
   .milZabores{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
     padding-top: 60px;
@@ -554,598 +559,154 @@ footer{
     border-right: double $black;
   }
   .imgPrincipalProd{
-    div{
-      img{
-        width: 400px;
-        height: 120px;
-        transform: translate(130px, 30px);
-      }
-    }
-  }
-  .tituloProductos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
-    font-weight: bolder;
-    transform: translate(135px, -15px);
-    color: #FDFEF1;
-  }
-  .productos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    transform: translate(175px, 1px);
-    margin-top: 30px;
-    font-weight: bolder;
-    div{
-      p{
-        font-size: large;
-        font-weight: bold;
-        margin-top: 5px;
-        margin-bottom: 4px;
-      }
-      h2{
-        display: inline-block;
-        font-size: small;
-      }
-      img{
-        width: 100px;
-        height: 75px;
-      }
-    }
-  }
-  #prodGrillas{
-    display: grid;
-    grid-template-areas: 
-    "prod1 prod2"
-    "prod3 prod4"
-    "prod5 prod6"
-    "prod7 prod8";
-    grid-template-columns: 150px 150px;
-    grid-template-rows: 150px 150px 150px 125px 150px 125px;
-  }
-  .prod1 {
-    grid-area: prod1;
-  }
-  .prod2 {
-    grid-area: prod2;
-    padding-left: 20px;
-  }
-  .prod3 {
-    grid-area: prod3;
-    padding-top: 30px
-  }
-  .prod4 {
-    grid-area: prod4;
-    padding-top: 30px;
-    padding-left: 20px;
-  }
-  .prod5 {
-    grid-area: prod5;
-    padding-top: 70px;
-  }
-  .prod6 {
-    grid-area: prod6;
-    padding-top: 70px;
-    padding-left: 20px;
-  }
-  .prod7 {
-    grid-area: prod7;
-    padding-top: 100px;
-  }
-  .prod8 {
-    grid-area: prod8;
-    padding-top: 100px;
-    padding-left: 20px;
-  }
-  .imgPrincipalTips{
-      img{
-        width: 400px;
-        height: 120px;
-        transform: translate(15px, 30px);
-      }
-  }
-  .titulosTips{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;   
-    font-weight: bolder;
-    transform: translate(310px, -25px);
-    color: #FDFEF1;    
-    width: 60%;
-    h1{
-      transform: translate(-290px, -7px);
-      color: #FDFEF1; 
-      font-size: xx-large; 
-    }    
-    h2{
-      font-family: "Gagalin"; 
-      color:black;
-      font-size: 25px;
-      margin-top: 60px;
-      margin-left: -170px;
-    }
-    p{
-      color:$black;
-      font-size: medium;
-    }
-  }
-  .articulosTips{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    margin-top: 25px;    
-    margin-left: 25px;
-    img{
-      margin-top: 2px;    
-      margin-left: 60px;
-      width: 200px;
-      height: 171px;
-    }
-  }
-  .tituloConocenos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-weight: bolder;
-    transform: translate(310px, -25px);
-    color: #FDFEF1;
-  width: 60%;
-    h1{
-      transform: translate(-290px, 12px);
-      color: #FDFEF1; 
-      font-size: xx-large; 
-    } 
-  }
-  .articulosConocenos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    margin-top: 25px;    
-    margin-left: 25px;
-  }
-  .imgPrincipalConocenos{
-    div{
-      img{
-        width: 400px;
-        height: 120px;
-        transform: translate(15px, 30px);
-      }
-    }
-  }
-  .contactanos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
-    font-weight: normal;
-    margin-top: 80px;
-    width: 80%;
-    transform: translate(50px, -50px);  
-    p{
-      font-size: 20px;
-    }
-    form{
-      font-size: 20px;
-    }
-  }  
-}
-// Large devices (desktops, 992px and up)
-@media only screen and(max-width: 992px) {
-  .milZabores{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
-    padding-top: 60px;
-    padding-right: 10px;
-    font-size: 30px;
-  }
-  .veganos{
-    font-family: 'Gagalin', 'calibri';
-    padding-top: 60px;
-    font-size: 30px;
-  }
-  #logo{
     display: flex;
-    justify-content: center;
-    padding-top: 12px;
-    padding-bottom: 30px;
-    padding-right: 25px;
-    margin-top: 30px;
-    background-color: #fbecb4;
-    height: 200px;
-    border-style: double;
-    border-color: black;
-    div{
-      padding: 15px;
-      a{
-        img{
-          height: 100px;
-          width: 100px;
-        }
-        
-         img:hover{
-          transform: scale(1.5, 1.5);
-          transition: 1s;
-        }
-      }
-    }
-  }
-  .barraNavegacion{
-    h3{
-      font-size: 20px;
-    }
-  }
-  #carouselExampleIndicators{
-    display: flex;
-    align-items: center;
-  }
-  .fondoClaro{
-    background-color: #fbecb4;
-    max-width: 75%;
-    max-height: 100%;
-    transform: translate(80px);
-    padding-left: -20px;
-    border-left: double $black;
-    border-right: double $black;
-  }
-  .imgPrincipalProd{
-    div{
-      img{
-        width: 400px;
-        height: 120px;
-        transform: translate(130px, 30px);
-      }
-    }
-  }
-  .tituloProductos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
-    font-weight: bolder;
-    transform: translate(135px, -15px);
-    color: #FDFEF1;
-  }
-  .productos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    transform: translate(175px, 1px);
-    margin-top: 30px;
-    font-weight: bolder;
-    div{
-      p{
-        font-size: large;
-        font-weight: bold;
-        margin-top: 5px;
-        margin-bottom: 4px;
-      }
-      h2{
-        display: inline-block;
-        font-size: small;
-      }
-      img{
-        width: 100px;
-        height: 75px;
-      }
-    }
-  }
-  #prodGrillas{
-    display: grid;
-    grid-template-areas: 
-    "prod1 prod2"
-    "prod3 prod4"
-    "prod5 prod6"
-    "prod7 prod8";
-    grid-template-columns: 150px 150px;
-    grid-template-rows: 150px 150px 150px 125px 150px 125px;
-  }
-  .prod1 {
-    grid-area: prod1;
-  }
-  .prod2 {
-    grid-area: prod2;
-    padding-left: 20px;
-  }
-  .prod3 {
-    grid-area: prod3;
-    padding-top: 30px
-  }
-  .prod4 {
-    grid-area: prod4;
-    padding-top: 30px;
-    padding-left: 20px;
-  }
-  .prod5 {
-    grid-area: prod5;
-    padding-top: 70px;
-  }
-  .prod6 {
-    grid-area: prod6;
-    padding-top: 70px;
-    padding-left: 20px;
-  }
-  .prod7 {
-    grid-area: prod7;
-    padding-top: 100px;
-  }
-  .prod8 {
-    grid-area: prod8;
-    padding-top: 100px;
-    padding-left: 20px;
-  }
-  .imgPrincipalTips{
-      img{
-        width: 400px;
-        height: 120px;
-        transform: translate(15px, 30px);
-      }
-  }
-  .titulosTips{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;   
-    font-weight: bolder;
-    transform: translate(310px, -25px);
-    color: #FDFEF1;    
-    width: 60%;
-    h1{
-      transform: translate(-290px, -7px);
-      color: #FDFEF1; 
-      font-size: xx-large; 
-    }    
-    h2{
-      font-family: "Gagalin"; 
-      color:black;
-      font-size: 25px;
-      margin-top: 60px;
-      margin-left: -170px;
-    }
-    p{
-      color:$black;
-      font-size: medium;
-    }
-  }
-  .articulosTips{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    margin-top: 25px;    
-    margin-left: 25px;
-    img{
-      margin-top: 2px;    
-      margin-left: 60px;
-      width: 200px;
-      height: 171px;
-    }
-  }
-  .tituloConocenos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-weight: bolder;
-    transform: translate(310px, -25px);
-    color: #FDFEF1;
-  width: 60%;
-    h1{
-      transform: translate(-290px, 12px);
-      color: #FDFEF1; 
-      font-size: xx-large; 
-    } 
-
-  }
-  .articulosConocenos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    margin-top: 25px;    
-    margin-left: 25px;
-    }
-  }
-  .imgPrincipalConocenos{
-    div{
-      img{
-        width: 400px;
-        height: 120px;
-        transform: translate(15px, 30px);
-      }
-    }  
-  }
-  .contactanos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
-    font-weight: normal;
-    margin-top: 80px;
-    width: 80%;
-    transform: translate(50px, -50px);  
-    p{
-      font-size: 20px;
-    }
-    form{
-      font-size: 20px;
-    }
-  }  
-
-
-// Extra large devices (large desktops, 1200px and up)
-@media only screen and(max-width: 1200px) {
-  .milZabores{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
-    padding-top: 60px;
-    padding-right: 10px;
-    font-size: 30px;
-  }
-  .veganos{
-    font-family: 'Gagalin', 'calibri';
-    padding-top: 60px;
-    font-size: 30px;
-  }
-  #logo{
-    display: flex;
-    justify-content: center;
-    padding-top: 12px;
-    padding-bottom: 30px;
-    padding-right: 25px;
-    margin-top: 30px;
-    background-color: #fbecb4;
-    height: 200px;
-    border-style: double;
-    border-color: black;
-    div{
-      padding: 15px;
-      a{
-        img{
-          height: 100px;
-          width: 100px;
-        }
-        
-         img:hover{
-          transform: scale(1.5, 1.5);
-          transition: 1s;
-        }
-      }
-    }
-  }
-  .barraNavegacion{
-    h3{
-      font-size: 20px;
-    }
-  }
-  #carouselExampleIndicators{
-    display: flex;
-    align-items: center;
-  }
-  .fondoClaro{
-    background-color: #fbecb4;
-    max-width: 75%;
-    max-height: 100%;
-    transform: translate(80px);
-    padding-left: -20px;
-    border-left: double $black;
-    border-right: double $black;
-  }
-  .imgPrincipalProd{
-    div{
-      img{
-        width: 400px;
-        height: 120px;
-        transform: translate(130px, 30px);
-      }
-    }
-  }
-  .tituloProductos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
-    font-weight: bolder;
-    transform: translate(135px, -15px);
-    color: #FDFEF1;
-  }
-  .productos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    transform: translate(175px, 1px);
-    margin-top: 30px;
-    font-weight: bolder;
-    div{
-      p{
-        font-size: large;
-        font-weight: bold;
-        margin-top: 5px;
-        margin-bottom: 4px;
-      }
-      h2{
-        display: inline-block;
-        font-size: small;
-      }
-      img{
-        width: 100px;
-        height: 75px;
-      }
-    }
-  }
-  #prodGrillas{
-    display: grid;
-    grid-template-areas: 
-    "prod1 prod2"
-    "prod3 prod4"
-    "prod5 prod6"
-    "prod7 prod8";
-    grid-template-columns: 150px 150px;
-    grid-template-rows: 150px 150px 150px 125px 150px 125px;
-  }
-  .prod1 {
-    grid-area: prod1;
-  }
-  .prod2 {
-    grid-area: prod2;
-    padding-left: 20px;
-  }
-  .prod3 {
-    grid-area: prod3;
-    padding-top: 30px
-  }
-  .prod4 {
-    grid-area: prod4;
-    padding-top: 30px;
-    padding-left: 20px;
-  }
-  .prod5 {
-    grid-area: prod5;
-    padding-top: 70px;
-  }
-  .prod6 {
-    grid-area: prod6;
-    padding-top: 70px;
-    padding-left: 20px;
-  }
-  .prod7 {
-    grid-area: prod7;
-    padding-top: 100px;
-  }
-  .prod8 {
-    grid-area: prod8;
-    padding-top: 100px;
-    padding-left: 20px;
-  }
-  .imgPrincipalTips{
-      img{
-        width: 400px;
-        height: 120px;
-        transform: translate(15px, 30px);
-      }
-  }
-  .titulosTips{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;   
-    font-weight: bolder;
-    transform: translate(310px, -25px);
-    color: #FDFEF1;    
-    width: 60%;
-    h1{
-      transform: translate(-290px, -7px);
-      color: #FDFEF1; 
-      font-size: xx-large; 
-    }    
-    h2{
-      font-family: "Gagalin"; 
-      color:black;
-      font-size: 25px;
-      margin-top: 60px;
-      margin-left: -170px;
-    }
-    p{
-      color:$black;
-      font-size: medium;
-    }
-  }
-  .articulosTips{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    margin-top: 25px;    
-    margin-left: 25px;
-    img{
-      margin-top: 2px;    
-      margin-left: 60px;
-      width: 200px;
-      height: 171px;
-    }
-  }
-  .tituloConocenos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-weight: bolder;
-    transform: translate(310px, -25px);
-    color: #FDFEF1;
-  width: 60%;
-    h1{
-      transform: translate(-290px, 12px);
-      color: #FDFEF1; 
-      font-size: xx-large; 
-    } 
-
-  }
-  .articulosConocenos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    margin-top: 25px;    
-    margin-left: 25px;
-    }
-  }
-  .imgPrincipalConocenos{
     img{
       width: 400px;
       height: 120px;
-      transform: translate(15px, 30px);
+      margin: auto;
     }
+  }
+  .tituloProductos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: -50px;
+    margin-left: 20px;
+    color: #FDFEF1;
+  }
+  .productos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 30px;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 50px;
+    div{
+      p{
+        font-size: large;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-bottom: 4px;
+      }
+      h2{
+        display: inline-block;
+        font-size: small;
+      }
+      img{
+        width: 100px;
+        height: 75px;
+      }
+    }
+  }
+  #prodGrillas{
+    display: grid;
+    grid-template-areas: 
+    "prod1 prod2"
+    "prod3 prod4"
+    "prod5 prod6"
+    "prod7 prod8";
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px 150px 125px 150px 125px;
+  }
+  .prod1 {
+    grid-area: prod1;
+  }
+  .prod2 {
+    grid-area: prod2;
+    padding-left: 20px;
+  }
+  .prod3 {
+    grid-area: prod3;
+    padding-top: 30px
+  }
+  .prod4 {
+    grid-area: prod4;
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  .prod5 {
+    grid-area: prod5;
+    padding-top: 70px;
+  }
+  .prod6 {
+    grid-area: prod6;
+    padding-top: 70px;
+    padding-left: 20px;
+  }
+  .prod7 {
+    grid-area: prod7;
+    padding-top: 100px;
+  }
+  .prod8 {
+    grid-area: prod8;
+    padding-top: 100px;
+    padding-left: 20px;
+  }
+  .imgPrincipalTips{
+      img{
+        width: 400px;
+        height: 120px;
+      }
+  }
+  .titulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: -20px;
+    margin-left: -40px;
+    color: #FDFEF1;
+    h1{
+      color: #FDFEF1; 
+      font-size: xx-large; 
+    }    
+    h2{
+      font-family: "Gagalin";
+      color: black;
+      font-size: 25px;
+      margin-top: 60px;
+      margin-left: 170px;
+    }
+    p{
+      color:$black;
+      font-size: medium;
+    }
+  }
+  .articulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
+    img{
+      margin-top: 2px;    
+      margin-left: 60px;
+      width: 200px;
+      height: 171px;
+    }
+  }
+  .imgPrincipalConocenos{
+    display: flex;
+    img{
+      width: 400px;
+      height: 120px;
+      margin: auto;
+    }
+  }
+  .tituloConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-weight: bolder;
+    color: #FDFEF1;
+    width: 60%;
+    h1{
+      color: #FDFEF1; 
+      font-size: xx-large; 
+      margin-left: 20px;
+    } 
+  }
+  .articulosConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
   }
   .contactanos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
@@ -1160,4 +721,580 @@ footer{
     form{
       font-size: 20px;
     }
-  }  
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .milZabores{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
+    padding-top: 60px;
+    padding-right: 10px;
+    font-size: 30px;
+  }
+  .veganos{
+    font-family: 'Gagalin', 'calibri';
+    padding-top: 60px;
+    font-size: 30px;
+  }
+  #logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 30px;
+    padding-right: 25px;
+    margin-top: 30px;
+    background-color: #fbecb4;
+    height: 200px;
+    border-style: double;
+    border-color: black;
+    div{
+      padding: 15px;
+      a{
+        img{
+          height: 100px;
+          width: 100px;
+        }
+        
+         img:hover{
+          transform: scale(1.5, 1.5);
+          transition: 1s;
+        }
+      }
+    }
+  }
+  .barraNavegacion{
+    h3{
+      font-size: 20px;
+    }
+  }
+  #carouselExampleIndicators{
+    display: flex;
+    align-items: center;
+  }
+  .fondoClaro{
+    background-color: #fbecb4;
+    max-width: 75%;
+    max-height: 100%;
+    transform: translate(80px);
+    padding-left: -20px;
+    border-left: double $black;
+    border-right: double $black;
+  }
+  .imgPrincipalProd{
+    display: flex;
+    img{
+      width: 500px;
+      height: 150px;
+    }
+  }
+  .tituloProductos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #FDFEF1;
+    margin-left: 50px;
+  }
+  .productos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: bolder;
+    div{
+      p{
+        font-size: large;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-bottom: 4px;
+      }
+      h2{
+        display: inline-block;
+        font-size: small;
+      }
+      img{
+        width: 100px;
+        height: 75px;
+      }
+    }
+  }
+  #prodGrillas{
+    display: grid;
+    grid-template-areas: 
+    "prod1 prod2 prod3"
+    "prod4 prod5 prod6"
+    "prod7 prod8";
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+  }
+  .prod1 {
+    grid-area: prod1;
+  }
+  .prod2 {
+    grid-area: prod2;
+  }
+  .prod3 {
+    grid-area: prod3;
+  }
+  .prod4 {
+    grid-area: prod4;
+  }
+  .prod5 {
+    grid-area: prod5;
+    padding-top: 50px;
+  }
+  .prod6 {
+    grid-area: prod6;
+    padding-top: 50px;
+  }
+  .prod7 {
+    grid-area: prod7;
+    padding-top: 50px;
+  }
+  .prod8 {
+    grid-area: prod8;
+    padding-top: 50px;
+  }
+  .imgPrincipalTips{
+    display: flex;
+      img{
+        width: 500px;
+        height: 150px;
+        margin: auto;
+      }
+  }
+  .titulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: -20px;
+    margin-left: -40px;
+    color: #FDFEF1;
+    h1{
+      color: #FDFEF1; 
+      font-size: xx-large; 
+    }    
+    h2{
+      font-family: "Gagalin";
+      color: black;
+      font-size: 25px;
+      margin-top: 60px;
+      margin-left: 240px;
+    }
+    p{
+      color:$black;
+      font-size: medium;
+    }
+  }
+  .articulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
+    img{
+      margin-top: 2px;    
+      margin-left: 110px;
+      width: 250px;
+      height: 214px;
+    }
+  }
+  .imgPrincipalConocenos{
+    display: flex;
+    img{
+      width: 500px;
+      height: 150px;
+      margin: auto;
+    }
+  }
+  .tituloConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-weight: bolder;
+    color: #FDFEF1;
+    width: 60%;
+    h1{
+      color: #FDFEF1; 
+      font-size: xx-large; 
+      margin-left: 40px;
+    } 
+  }
+  .articulosConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
+  }
+  .contactanos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 80px;
+    width: 80%;
+    transform: translate(50px, -50px);  
+      p{
+        font-size: 20px;
+      }
+      form{
+        font-size: 20px;
+      }
+    }
+  }
+
+// Large devices (desktops, 992px and up)
+@media(min-width: 992px) and (max-width: 1199.98px) {
+  #carouselExampleIndicators{
+    display: flex;
+    align-items: center;
+  }
+  .fondoClaro{
+    background-color: #fbecb4;
+    max-width: 75%;
+    max-height: 100%;
+    margin-left: -90px;
+    border-left: double $black;
+    border-right: double $black;
+  }
+  .imgPrincipalProd{
+    display: flex;
+    img{
+      width: 700px;
+      height: 210px;
+    }
+  }
+  .tituloProductos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    color: #FDFEF1;
+    margin-left: 50px;
+  }
+  .productos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: bolder;
+    div{
+      p{
+        font-size: large;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-bottom: 4px;
+      }
+      h2{
+        display: inline-block;
+        font-size: small;
+      }
+      img{
+        width: 130px;
+        height: 100px;
+      }
+    }
+  }
+  #prodGrillas{
+    display: grid;
+    grid-template-areas: 
+    "prod1 prod2 prod3"
+    "prod4 prod5 prod6"
+    "prod7 prod8";
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    justify-content: space-around;
+    
+  }
+  .prod1 {
+    grid-area: prod1;
+    margin-left: 40px;
+  }
+  .prod2 {
+    grid-area: prod2;
+    margin-left: 40px;
+  }
+  .prod3 {
+    grid-area: prod3;
+    margin-left: 40px;
+  }
+  .prod4 {
+    grid-area: prod4;
+    margin-left: 40px;
+  }
+  .prod5 {
+    grid-area: prod5;
+    padding-top: 70px;
+    margin-left: 40px;
+  }
+  .prod6 {
+    grid-area: prod6;
+    padding-top: 70px;
+    margin-left: 40px;
+  }
+  .prod7 {
+    grid-area: prod7;
+    padding-top: 70px;
+    margin-left: 40px;
+  }
+  .prod8 {
+    grid-area: prod8;
+    padding-top: 70px;
+    margin-left: 40px;
+  }
+  .imgPrincipalTips{
+    display: flex;
+      img{
+        width: 700px;
+        height: 210px;
+        margin: auto;
+      }
+  }
+  .titulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: -10px;
+    margin-left: 25px;
+    color: #FDFEF1;
+    h1{
+      color: #FDFEF1; 
+      font-size: xx-large; 
+      margin: auto;
+      margin-top: -50px;
+      margin-left: 20px;
+    }    
+    h2{
+      font-family: "Gagalin";
+      color: black;
+      font-size: 25px;
+      margin-top: 60px;
+      margin-left: 230px;
+    }
+    p{
+      color:$black;
+      font-size: medium;
+    }
+  }
+  .articulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
+    img{
+      margin-top: 2px;    
+      margin-left: 150px;
+      width: 250px;
+      height: 214px;
+    }
+  }
+  .imgPrincipalConocenos{
+    display: flex;
+    img{
+      width: 700px;
+      height: 210px;
+      margin: auto;
+    }
+  }
+  .tituloConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-weight: bolder;
+    color: #FDFEF1;
+    width: 60%;
+    h1{
+      color: #FDFEF1; 
+      font-size: xx-large; 
+      margin-left: 40px;
+    } 
+  }
+  .articulosConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
+  }
+  .contactanos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 80px;
+    width: 80%;
+    transform: translate(50px, -50px);  
+      p{
+        font-size: 20px;
+      }
+      form{
+        font-size: 20px;
+      }
+    }
+  }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width:1200px) and (max-width:1366px){
+  #carouselExampleIndicators{
+    display: flex;
+    align-items: center;
+  }
+  .fondoClaro{
+    background-color: #fbecb4;
+    max-width: 75%;
+    max-height: 100%;
+    margin-left: -50px;
+    border-left: double $black;
+    border-right: double $black;
+  }
+  .imgPrincipalProd{
+    display: flex;
+    img{
+      width: 700px;
+      height: 210px;
+    }
+  }
+  .tituloProductos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    color: #FDFEF1;
+    margin-left: 100px;
+  }
+  .productos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: bolder;
+    div{
+      p{
+        font-size: large;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-bottom: 4px;
+      }
+      h2{
+        display: inline-block;
+        font-size: small;
+      }
+      img{
+        width: 130px;
+        height: 100px;
+      }
+    }
+  }
+  #prodGrillas{
+    display: grid;
+    grid-template-areas: 
+    "prod1 prod2 prod3"
+    "prod4 prod5 prod6"
+    "prod7 prod8";
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    justify-content: space-around;
+    
+  }
+  .prod1 {
+    grid-area: prod1;
+    margin-left: 40px;
+  }
+  .prod2 {
+    grid-area: prod2;
+    margin-left: 40px;
+  }
+  .prod3 {
+    grid-area: prod3;
+    margin-left: 40px;
+  }
+  .prod4 {
+    grid-area: prod4;
+    margin-left: 40px;
+  }
+  .prod5 {
+    grid-area: prod5;
+    padding-top: 70px;
+    margin-left: 40px;
+  }
+  .prod6 {
+    grid-area: prod6;
+    padding-top: 70px;
+    margin-left: 40px;
+  }
+  .prod7 {
+    grid-area: prod7;
+    padding-top: 70px;
+    margin-left: 40px;
+  }
+  .prod8 {
+    grid-area: prod8;
+    padding-top: 70px;
+    margin-left: 40px;
+  }
+  .imgPrincipalTips{
+    display: flex;
+      img{
+        width: 700px;
+        height: 210px;
+        margin: auto;
+      }
+  }
+  .titulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: -10px;
+    margin-left: 25px;
+    color: #FDFEF1;
+    h1{
+      color: #FDFEF1; 
+      font-size: xx-large; 
+      margin: auto;
+      margin-top: -45px;
+      margin-left: 85px;
+    }    
+    h2{
+      font-family: "Gagalin";
+      color: black;
+      font-size: 25px;
+      margin-top: 60px;
+      margin-left: 230px;
+    }
+    p{
+      color:$black;
+      font-size: medium;
+    }
+  }
+  .articulosTips{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
+    img{
+      margin-top: 2px;    
+      margin-left: 150px;
+      width: 250px;
+      height: 214px;
+    }
+  }
+  .imgPrincipalConocenos{
+    display: flex;
+    img{
+      width: 700px;
+      height: 210px;
+      margin: auto;
+    }
+  }
+  .tituloConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-weight: bolder;
+    color: #FDFEF1;
+    width: 60%;
+    h1{
+      color: #FDFEF1; 
+      font-size: xx-large; 
+      margin-left: 100px;
+    } 
+  }
+  .articulosConocenos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin-top: 25px;    
+    margin-left: 25px;
+  }
+  .contactanos{
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 80px;
+    width: 80%;
+    transform: translate(50px, -50px);  
+      p{
+        font-size: 20px;
+      }
+      form{
+        font-size: 20px;
+      }
+    }
+  }
