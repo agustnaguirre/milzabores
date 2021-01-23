@@ -1,66 +1,66 @@
                 /*******Estilos generales*******/
 @font-face {
   font-family: 'GlacialIndifference';
-  src: url(../fonts/GlacialIndifference/GlacialIndifference-Regular.otf);    
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/GlacialIndifference/GlacialIndifference-Regular.otf);    
   }
 @font-face {
   font-family: 'Gagalin' ;
-  src: url(../fonts/Gagalin/OTF/Gagalin-Regular.otf);
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/Gagalin/OTF/Gagalin-Regular.otf);
 }
 html{
   width: 100%;
   body{
     background-image: url(../images/fondo-vegetales4.jpg);
-    position: relative;
     min-height: 1000px;
     max-height: 2000px;
+    position: relative;
   }
   main{
     margin-bottom:10px;
   }
 }
 .barraNavegacion{
-  display: flex;
-  justify-content: space-around;
   align-items: center;
   border: black;
+  display: flex;
+  justify-content: space-around;
   nav{
     background-image: linear-gradient(#fbecb4, #FDFEF1);
     width: 100%;
   }
   h3{
-    margin-bottom: 45px;
-    font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     background-color: #fbecb4;
+    border-color: black;
+    border-style: double;
+    font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin-bottom: 45px;
     margin-top: 30px;
     text-align: center;
-    border-style: double;
-    border-color: black;
   }
 }
 ul{
-  text-align: center;
   align-items: center;
   color: #2b2f17;
+  text-align: center;
   li{
     display: inline-block;
-    justify-content: space-between;
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size:20px;
+    font-size:1.25rem;
+    justify-content: space-between;
     margin-left: 20px;
     margin-right: 20px;
     a{
-      text-decoration: none;
       color: #2b2f17;
       justify-content: space-between;
+      text-decoration: none;
     }
     a:hover{
-      text-decoration: none;
       color: #2b2f17;
+      text-decoration: none;
       transition: 0.5s;
     }
   }
@@ -70,70 +70,70 @@ ul{
   }
 }
 #logo{
+  background-color: #fbecb4;
+  border-color: black;
+  border-style: double;
   display: flex;
+  height: 200px;
   justify-content: center;
   padding-top: 12px;
   padding-bottom: 30px;
   margin-top: 30px;
-  background-color: #fbecb4;
-  height: 200px;
-  border-style: double;
-  border-color: black;
   div{
     padding: 15px;
     a{
       img{
+        border-color: black;
         width:150px;
         height: 150px;
-        border-color: black;
       }
       img:hover{
+        border-color: black;
         transform: scale(1.5, 1.5);
         transition: 1s;
-        border-color: black;
       }
     }
   }
 }
 .milZabores{
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
+  font-size: 2.81rem;
   padding-top: 60px;
-  font-size: 45px;
 }
 .veganos{
   font-family: 'Gagalin', 'calibri';
+  font-size: 2.81rem;
   padding-top: 60px;
-  font-size: 45px;
 }
 footer{
+  background-image: linear-gradient(#FDFEF1, #fbecb4);
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-  width: 100%;
-  height: 50px;
   bottom: 0;
+  height: 50px;
   right: 0;
   left: 0;
   position: relative;
   padding: 10px;
-  background-image: linear-gradient(#FDFEF1, #fbecb4);
+  width: 100%;
   p{
-    text-align:center;
     color: black;
+    text-align:center;
   }
 }
 .carousel-inner {
-  position: relative;
-  width: 70%;
-  overflow: hidden;
-  transform: translate(150px, 10px);
   margin-bottom: 45px;
+  overflow: hidden;
+  position: relative;
+  transform: translate(150px, 10px);
+  width: 70%;
 }
 .fondoClaro{
   background-color: #fbecb4;
-  max-width: 75%;
   transform: translate(230px);
-  padding-left: -20px;
   border-left: double black;
   border-right: double black;
+  max-width: 75%;
+  padding-left: -20px;
 }
 .fa-instagram-square{
   color: #2b2f17; 
@@ -150,9 +150,9 @@ footer{
 .imgPrincipalProd{
   display: flex;
   img{
-    width: 1000px;
-    height: 300px;
     margin: auto;
+    height: 300px;
+    width: 1000px;
   }
 }
 .tituloProductos{
@@ -221,26 +221,26 @@ footer{
 .imgPrincipalTips{
   display: flex;
   img{
-    width: 1000px;
-    height: 300px;
     margin: auto;
+    height: 300px;
+    width: 1000px;
   }
 }
 .titulosTips{
+  color: #FDFEF1;   
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-  font-weight: bolder;
-  color: #FDFEF1;    
+  font-weight: bolder; 
   width: 60%;
   h1{
     color: #FDFEF1;
+    font-size: 2.5rem;
     margin-top: -45px;
     margin-left: 25%;
-    font-size: 40px;
   }
   h2{
-    font-family: "Gagalin";
     color:black;
-    font-size: 40px;
+    font-family: "Gagalin";
+    font-size: 2.5rem;
     margin: auto;
     margin-top: 40px;
     margin-left: 40px;
@@ -268,30 +268,30 @@ footer{
   }
 }
 .tituloConocenos{
+  color: #FDFEF1;
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
   font-weight: bolder;
-  color: #FDFEF1;
   h1{
     color: #FDFEF1;
     margin-top: -45px;
     margin-left: 15%;
-    font-size: 40px;
+    font-size: 2.5rem;
   } 
 }
 .articulosConocenos{
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+  font-size: 1.56rem;
   margin-top: 25px;
   margin-left: 25px;
-  font-size: 25px;
 }
                 /*******Estilos Contactanos*******/
 .contactanos{
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-  font-size: 25px;
+  font-size: 1.56rem;
   font-weight: normal;
   margin-top: 80px;
-  width: 80%;
   transform: translate(400px);  
+  width: 80%;
   p{
     font-size: 20px;
   }
@@ -309,23 +309,24 @@ footer{
                   /*******Estilos generales*******/
   .milZabores{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
+    font-size: 1.87rem;
     padding-top: 60px;
     padding-right: 10px;
-    font-size: 30px;
   }
   .veganos{
     font-family: 'Gagalin', 'calibri';
+
+
     padding-top: 60px;
-    font-size: 30px;
   }
   #logo{
     display: flex;
+    background-color: #fbecb4;
     justify-content: center;
     padding-top: 12px;
     padding-bottom: 30px;
     padding-right: 25px;
     margin-top: 30px;
-    background-color: #fbecb4;
     height: 200px;
     border-style: double;
     border-color: black;
@@ -346,21 +347,24 @@ footer{
   }
   .barraNavegacion{
     h3{
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
-  #carouselExampleIndicators{
-    display: flex;
-    align-items: center;
+  .carousel-inner {
+    position: relative;
+    margin-bottom: 45px;
+    overflow: hidden;
+    transform: translate(80px, 10px);
+    width: 70%;
   }
   .fondoClaro{
     background-color: #fbecb4;
+    border-left: double black;
+    border-right: double black;
     max-width: 75%;
     max-height: 100%;
     transform: translate(80px);
     padding-left: -20px;
-    border-left: double $black;
-    border-right: double $black;
   }
   .fa-instagram-square{
     color: #2b2f17; 
@@ -380,16 +384,16 @@ footer{
     }
   }
   .tituloProductos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
-    font-weight: bolder;
     color: #FDFEF1;
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 1.56rem;
+    font-weight: bolder;
   }
   .productos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    margin-top: 30px;
-    margin-left: 50px;
     font-weight: bolder;
+    margin-left: 50px;
+    margin-top: 30px;
     div{
       p{
         font-size: large;
@@ -460,9 +464,9 @@ footer{
     }
   }
   .titulosTips{
+    color: #FDFEF1;    
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;   
     font-weight: bolder;
-    color: #FDFEF1;    
     width: 60%;
     h1{
       color: #FDFEF1; 
@@ -470,8 +474,8 @@ footer{
       margin-left: 20px;
     }    
     h2{
-      font-family: "Gagalin"; 
       color:black;
+      font-family: "Gagalin"; 
       font-size: 25px;
       margin-top: 60px;
       margin-left: 120px;
@@ -500,9 +504,9 @@ footer{
     }
   }
   .tituloConocenos{
+    color: #FDFEF1;
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-weight: bolder;
-    color: #FDFEF1;
     width: 60%;
     h1{
       color: #FDFEF1; 
@@ -519,11 +523,11 @@ footer{
                   /*******Estilos Contactanos*******/
   .contactanos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: normal;
     margin-top: 80px;
-    width: 80%;
     transform: translate(50px, -50px);  
+    width: 80%;
     p{
       font-size: 20px;
     }
@@ -538,26 +542,26 @@ footer{
                 /*******Estilos generales*******/
   .milZabores{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
+    font-size: 30px;
     padding-top: 60px;
     padding-right: 10px;
-    font-size: 30px;
   }
   .veganos{
     font-family: 'Gagalin', 'calibri';
+    font-size: 1.87rem;
     padding-top: 60px;
-    font-size: 30px;
   }
   #logo{
     display: flex;
     justify-content: center;
+    background-color: #fbecb4;
+    border-style: double;
+    border-color: black;
+    height: 200px;
+    margin-top: 30px;
     padding-top: 12px;
     padding-bottom: 30px;
     padding-right: 25px;
-    margin-top: 30px;
-    background-color: #fbecb4;
-    height: 200px;
-    border-style: double;
-    border-color: black;
     div{
       padding: 15px;
       a{
@@ -578,10 +582,6 @@ footer{
       font-size: 20px;
     }
   }
-  #carouselExampleIndicators{
-    display: flex;
-    align-items: center;
-  }
   .fondoClaro{
     background-color: #fbecb4;
     max-width: 75%;
@@ -590,6 +590,13 @@ footer{
     padding-left: -20px;
     border-left: double $black;
     border-right: double $black;
+  }
+  .carousel-inner {
+    position: relative;
+    margin-bottom: 45px;
+    overflow: hidden;
+    transform: translate(75px, 10px);
+    width: 70%;
   }
   .fa-instagram-square{
     color: #2b2f17; 
@@ -611,18 +618,18 @@ footer{
     }
   }
   .tituloProductos{
+    color: #FDFEF1;
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: bolder;
     margin: auto;
     margin-top: -50px;
     margin-left: 20px;
-    color: #FDFEF1;
   }
   .productos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    margin-top: 30px;
     font-weight: bolder;
+    margin-top: 30px;
     margin: auto;
     margin-top: 30px;
     margin-left: 50px;
@@ -696,21 +703,21 @@ footer{
     }
   }
   .titulosTips{
+    color: #FDFEF1;
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: bolder;
     margin: auto;
     margin-top: -20px;
     margin-left: -40px;
-    color: #FDFEF1;
     h1{
       color: #FDFEF1; 
       font-size: xx-large; 
     }    
     h2{
-      font-family: "Gagalin";
       color: black;
-      font-size: 25px;
+      font-family: "Gagalin";
+      font-size: 1.56rem;
       margin-top: 60px;
       margin-left: 170px;
     }
@@ -741,9 +748,9 @@ footer{
     }
   }
   .tituloConocenos{
+    color: #FDFEF1;
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-weight: bolder;
-    color: #FDFEF1;
     width: 60%;
     h1{
       color: #FDFEF1; 
@@ -760,16 +767,16 @@ footer{
                     /*******Estilos Contactanos*******/
   .contactanos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: normal;
     margin-top: 80px;
     width: 80%;
-    transform: translate(50px, -50px);  
+    transform: translate(50px, -50px);
     p{
-      font-size: 20px;
+      font-size: 1.25rem;
     }
     form{
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
 } 
@@ -779,24 +786,25 @@ footer{
                 /*******Estilos generales*******/
   .milZabores{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
+    font-size: 40px;
     padding-top: 60px;
-    padding-right: 10px;
-    font-size: 30px;
+    padding-right: -10px;
   }
   .veganos{
     font-family: 'Gagalin', 'calibri';
+    font-size: 2.5rem;
     padding-top: 60px;
-    font-size: 30px;
+    margin-left: 15px;
   }
   #logo{
     display: flex;
     justify-content: center;
+    background-color: #fbecb4;
+    height: 200px;
+    margin-top: 30px;
     padding-top: 12px;
     padding-bottom: 30px;
     padding-right: 25px;
-    margin-top: 30px;
-    background-color: #fbecb4;
-    height: 200px;
     border-style: double;
     border-color: black;
     div{
@@ -819,18 +827,21 @@ footer{
       font-size: 20px;
     }
   }
-  #carouselExampleIndicators{
-    display: flex;
-    align-items: center;
-  }
   .fondoClaro{
     background-color: #fbecb4;
-    max-width: 75%;
-    max-height: 100%;
-    transform: translate(80px);
-    padding-left: -20px;
     border-left: double $black;
     border-right: double $black;
+    max-height: 100%;
+    max-width: 75%;
+    transform: translate(80px);
+    padding-left: -20px;
+  }
+  .carousel-inner {
+    margin-bottom: 45px;
+    overflow: hidden;
+    position: relative;
+    transform: translate(100px, 10px);
+    width: 70%;
   }
 
                 /*******Estilos Productos*******/
@@ -842,17 +853,17 @@ footer{
     }
   }
   .tituloProductos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
-    font-weight: bolder;
     color: #FDFEF1;
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 1.56rem;
+    font-weight: bolder;
     margin-left: 50px;
   }
   .productos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-weight: bolder;
     margin-top: 30px;
     margin-left: 10px;
-    font-weight: bolder;
     div{
       p{
         font-size: large;
@@ -918,21 +929,21 @@ footer{
     }
   }
   .titulosTips{
+    color: #FDFEF1;
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: bolder;
     margin: auto;
-    margin-top: -20px;
     margin-left: -40px;
-    color: #FDFEF1;
+    margin-top: -20px;
     h1{
       color: #FDFEF1; 
       font-size: xx-large; 
     }    
     h2{
-      font-family: "Gagalin";
       color: black;
-      font-size: 25px;
+      font-family: "Gagalin", 'Gill Sans', 'Gill Sans MT', sans-serif;
+      font-size: 1.56rem;
       margin-top: 60px;
       margin-left: 240px;
     }
@@ -982,16 +993,16 @@ footer{
                       /*******Estilos Contactanos*******/
   .contactanos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: normal;
     margin-top: 80px;
-    width: 80%;
     transform: translate(50px, -50px);  
+    width: 80%;
     p{
-      font-size: 20px;
+      font-size: 1.25rem;
     }
     form{
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
 }
@@ -999,17 +1010,21 @@ footer{
 @media(min-width: 992px) and (max-width: 1199.98px) {
 
                 /*******Estilos generales*******/
-  #carouselExampleIndicators{
-    display: flex;
-    align-items: center;
-  }
+
   .fondoClaro{
     background-color: #fbecb4;
-    max-width: 75%;
-    max-height: 100%;
-    margin-left: -90px;
     border-left: double $black;
     border-right: double $black;
+    margin-left: -90px;
+    max-width: 75%;
+    max-height: 100%;
+  }
+  .carousel-inner {
+    position: relative;
+    margin-bottom: 45px;
+    overflow: hidden;
+    transform: translate(140px, 10px);
+    width: 70%;
   }
   .fa-instagram-square{
     color: #2b2f17; 
@@ -1030,16 +1045,16 @@ footer{
     }
   }
   .tituloProductos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
     color: #FDFEF1;
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 1.56rem;
     margin-left: 50px;
   }
   .productos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-weight: bolder;
     margin-top: 30px;
     margin-left: 10px;
-    font-weight: bolder;
     div{
       p{
         font-size: large;
@@ -1115,13 +1130,13 @@ footer{
     }
   }
   .titulosTips{
+    color: #FDFEF1;
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: bolder;
     margin: auto;
     margin-top: -10px;
     margin-left: 25px;
-    color: #FDFEF1;
     h1{
       color: #FDFEF1; 
       font-size: xx-large; 
@@ -1130,14 +1145,14 @@ footer{
       margin-left: 20px;
     }    
     h2{
-      font-family: "Gagalin";
       color: black;
-      font-size: 25px;
+      font-family: "Gagalin", 'Gill Sans', 'Gill Sans MT', sans-serif;
+      font-size: 1.56rem;
       margin-top: 60px;
       margin-left: 230px;
     }
     p{
-      color:$black;
+      color: black;
       font-size: medium;
     }
   }
@@ -1175,18 +1190,18 @@ footer{
   }
   .articulosConocenos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    margin-top: 25px;    
+    margin-top: 25px;
     margin-left: 25px;
   }
 
                       /*******Estilos Contactanos*******/
   .contactanos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: normal;
     margin-top: 80px;
-    width: 80%;
     transform: translate(50px, -50px);  
+    width: 80%;
     p{
       font-size: 20px;
     }
@@ -1199,17 +1214,13 @@ footer{
 @media (min-width:1200px) and (max-width:1366px) {
 
                 /*******Estilos generales*******/
-  #carouselExampleIndicators{
-    display: flex;
-    align-items: center;
-  }
   .fondoClaro{
     background-color: #fbecb4;
+    border-left: double black;
+    border-right: double black;
     max-width: 75%;
     max-height: 100%;
     margin-left: -50px;
-    border-left: double $black;
-    border-right: double $black;
   }
   .fa-instagram-square{
     color: #2b2f17; 
@@ -1230,16 +1241,16 @@ footer{
     }
   }
   .tituloProductos{
-    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
     color: #FDFEF1;
+    font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 1.56rem;
     margin-left: 100px;
   }
   .productos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-weight: bolder;
     margin-top: 30px;
     margin-left: 10px;
-    font-weight: bolder;
     div{
       p{
         font-size: large;
@@ -1315,13 +1326,13 @@ footer{
     }
   }
   .titulosTips{
+    color: #FDFEF1;
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: bolder;
     margin: auto;
     margin-top: -10px;
     margin-left: 25px;
-    color: #FDFEF1;
     h1{
       color: #FDFEF1; 
       font-size: xx-large; 
@@ -1330,14 +1341,14 @@ footer{
       margin-left: 85px;
     }    
     h2{
-      font-family: "Gagalin";
       color: black;
-      font-size: 25px;
+      font-family: "Gagalin",  'Gill Sans', 'Gill Sans MT', sans-serif;
+      font-size: 1.56rem;
       margin-top: 60px;
       margin-left: 230px;
     }
     p{
-      color:$black;
+      color:black;
       font-size: medium;
     }
   }
@@ -1348,8 +1359,8 @@ footer{
     img{
       margin-top: 2px;    
       margin-left: 150px;
-      width: 250px;
       height: 214px;
+      width: 250px;
     }
   }
 
@@ -1357,15 +1368,15 @@ footer{
   .imgPrincipalConocenos{
     display: flex;
     img{
+      margin: auto;
       width: 700px;
       height: 210px;
-      margin: auto;
     }
   }
   .tituloConocenos{
+    color: #FDFEF1;
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-weight: bolder;
-    color: #FDFEF1;
     width: 60%;
     h1{
       color: #FDFEF1; 
@@ -1382,11 +1393,11 @@ footer{
                         /*******Estilos Contactanos*******/
   .contactanos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: normal;
     margin-top: 80px;
-    width: 80%;
     transform: translate(50px, -50px);  
+    width: 80%;
     p{
       font-size: 20px;
     }
