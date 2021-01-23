@@ -1,3 +1,4 @@
+                /*******Estilos generales*******/
 @font-face {
   font-family: 'GlacialIndifference';
   src: url(../fonts/GlacialIndifference/GlacialIndifference-Regular.otf);    
@@ -9,7 +10,7 @@
   src: url(../fonts/Gagalin/OTF/Gagalin-Regular.otf);
   font-weight: normal;
   font-style: normal;
-} 
+}
 html{
   width: 100%;
   body{
@@ -119,6 +120,33 @@ footer{
     color: black;
   }
 }
+.carousel-inner {
+  position: relative;
+  width: 70%;
+  overflow: hidden;
+  transform: translate(150px, 10px);
+  margin-bottom: 45px;
+}
+.fondoClaro{
+  background-color: #fbecb4;
+  max-width: 75%;
+  transform: translate(230px);
+  padding-left: -20px;
+  border-left: double black;
+  border-right: double black;
+}
+.fa-instagram-square{
+  color: #2b2f17; 
+  font-size: xx-large;
+  margin-left: 1450px;
+}
+.fa-whatsapp-square{
+  color: #2b2f17;
+  font-size: xx-large;
+  margin-right: 25px;
+}
+
+                /*******Estilos Productos*******/
 .imgPrincipalProd{
   display: flex;
   img{
@@ -188,6 +216,8 @@ footer{
 .prod8 {
   grid-area: prod8;
 }
+
+                /*******Estilos Milzatips*******/
 .imgPrincipalTips{
   display: flex;
   img{
@@ -227,6 +257,8 @@ footer{
     margin: auto;
   }
 }
+
+                /*******Estilos Conocenos*******/
 .imgPrincipalConocenos{
   display: flex;
   img{
@@ -252,6 +284,7 @@ footer{
   margin-left: 25px;
   font-size: 25px;
 }
+                /*******Estilos Contactanos*******/
 .contactanos{
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
   font-size: 25px;
@@ -266,33 +299,14 @@ footer{
     font-size: 20px;
   }
 }
-.carousel-inner {
-  position: relative;
-  width: 70%;
-  overflow: hidden;
-  transform: translate(150px, 10px);
-  margin-bottom: 45px;
-}
-.fondoClaro{
-  background-color: #fbecb4;
-  max-width: 75%;
-  transform: translate(230px);
-  padding-left: -20px;
-  border-left: double black;
-  border-right: double black;
-}
-.fa-instagram-square{
-  color: #2b2f17; 
-  font-size: xx-large;
-  margin-right: -1500px;
-}
-.fa-whatsapp-square{
-  color: #2b2f17;
-  font-size: xx-large;
-}
+
+/****Media Queries****/
 
 // Extra small devices (portrait phones)
+
 @media (max-width: 575.98px) {
+
+                  /*******Estilos generales*******/
   .milZabores{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
     padding-top: 60px;
@@ -348,6 +362,17 @@ footer{
     border-left: double $black;
     border-right: double $black;
   }
+  .fa-instagram-square{
+    color: #2b2f17; 
+    font-size: xx-large;
+    margin-left: 120px;
+  }
+  .fa-whatsapp-square{
+    color: #2b2f17;
+    font-size: xx-large;
+  }
+
+                /*******Estilos Productos*******/
   .imgPrincipalProd{
     img{
       width: 400px;
@@ -426,11 +451,13 @@ footer{
     padding-top: 100px;
     padding-left: 20px;
   }
+
+                /*******Estilos Milzatips*******/
   .imgPrincipalTips{
-      img{
-        width: 400px;
-        height: 120px;
-      }
+    img{
+      width: 400px;
+      height: 120px;
+    }
   }
   .titulosTips{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;   
@@ -464,6 +491,8 @@ footer{
       height: 171px;
     }
   }
+
+                /*******Estilos Conocenos*******/
   .imgPrincipalConocenos{
     img{
       width: 400px;
@@ -486,23 +515,27 @@ footer{
     margin-top: 25px;    
     margin-left: 25px;
   }
+
+                  /*******Estilos Contactanos*******/
   .contactanos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-        font-size: 25px;
-        font-weight: normal;
-        margin-top: 80px;
-        width: 80%;
-        transform: translate(50px, -50px);  
-        p{
-          font-size: 20px;
-        }
-        form{
-          font-size: 20px;
-        }
-      }
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 80px;
+    width: 80%;
+    transform: translate(50px, -50px);  
+    p{
+      font-size: 20px;
+    }
+    form{
+      font-size: 20px;
+    }
+  }
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width:576px) and (max-width: 767.98px) {
+
+                /*******Estilos generales*******/
   .milZabores{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
     padding-top: 60px;
@@ -558,6 +591,17 @@ footer{
     border-left: double $black;
     border-right: double $black;
   }
+  .fa-instagram-square{
+    color: #2b2f17; 
+    font-size: xx-large;
+    margin-left: 120px;
+  }
+  .fa-whatsapp-square{
+    color: #2b2f17;
+    font-size: xx-large;
+  }
+
+                /*******Estilos Productos*******/
   .imgPrincipalProd{
     display: flex;
     img{
@@ -643,11 +687,13 @@ footer{
     padding-top: 100px;
     padding-left: 20px;
   }
+
+                /*******Estilos Milzatips*******/
   .imgPrincipalTips{
-      img{
-        width: 400px;
-        height: 120px;
-      }
+    img{
+      width: 400px;
+      height: 120px;
+    }
   }
   .titulosTips{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
@@ -684,6 +730,8 @@ footer{
       height: 171px;
     }
   }
+
+                    /*******Estilos Conocenos*******/
   .imgPrincipalConocenos{
     display: flex;
     img{
@@ -699,15 +747,17 @@ footer{
     width: 60%;
     h1{
       color: #FDFEF1; 
-      font-size: xx-large; 
+      font-size: xx-large;
       margin-left: 20px;
-    } 
+    }
   }
   .articulosConocenos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     margin-top: 25px;    
     margin-left: 25px;
   }
+
+                    /*******Estilos Contactanos*******/
   .contactanos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-size: 25px;
@@ -722,9 +772,11 @@ footer{
       font-size: 20px;
     }
   }
-}
+} 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+                /*******Estilos generales*******/
   .milZabores{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT';
     padding-top: 60px;
@@ -780,6 +832,8 @@ footer{
     border-left: double $black;
     border-right: double $black;
   }
+
+                /*******Estilos Productos*******/
   .imgPrincipalProd{
     display: flex;
     img{
@@ -853,13 +907,15 @@ footer{
     grid-area: prod8;
     padding-top: 50px;
   }
+
+                /*******Estilos Milzatips*******/
   .imgPrincipalTips{
     display: flex;
-      img{
-        width: 500px;
-        height: 150px;
-        margin: auto;
-      }
+    img{
+      width: 500px;
+      height: 150px;
+      margin: auto;
+    }
   }
   .titulosTips{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
@@ -896,6 +952,8 @@ footer{
       height: 214px;
     }
   }
+
+                    /*******Estilos Conocenos*******/
   .imgPrincipalConocenos{
     display: flex;
     img{
@@ -913,13 +971,15 @@ footer{
       color: #FDFEF1; 
       font-size: xx-large; 
       margin-left: 40px;
-    } 
+    }
   }
   .articulosConocenos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     margin-top: 25px;    
     margin-left: 25px;
   }
+
+                      /*******Estilos Contactanos*******/
   .contactanos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-size: 25px;
@@ -927,17 +987,18 @@ footer{
     margin-top: 80px;
     width: 80%;
     transform: translate(50px, -50px);  
-      p{
-        font-size: 20px;
-      }
-      form{
-        font-size: 20px;
-      }
+    p{
+      font-size: 20px;
+    }
+    form{
+      font-size: 20px;
     }
   }
-
+}
 // Large devices (desktops, 992px and up)
 @media(min-width: 992px) and (max-width: 1199.98px) {
+
+                /*******Estilos generales*******/
   #carouselExampleIndicators{
     display: flex;
     align-items: center;
@@ -950,6 +1011,17 @@ footer{
     border-left: double $black;
     border-right: double $black;
   }
+  .fa-instagram-square{
+    color: #2b2f17; 
+    font-size: xx-large;
+    margin-left: 530px;
+  }
+  .fa-whatsapp-square{
+    color: #2b2f17;
+    font-size: xx-large;
+    }
+
+                /*******Estilos Productos*******/
   .imgPrincipalProd{
     display: flex;
     img{
@@ -1032,13 +1104,15 @@ footer{
     padding-top: 70px;
     margin-left: 40px;
   }
+
+                /*******Estilos Milzatips*******/
   .imgPrincipalTips{
     display: flex;
-      img{
-        width: 700px;
-        height: 210px;
-        margin: auto;
-      }
+    img{
+      width: 700px;
+      height: 210px;
+      margin: auto;
+    }
   }
   .titulosTips{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
@@ -1078,6 +1152,8 @@ footer{
       height: 214px;
     }
   }
+
+                    /*******Estilos Conocenos*******/
   .imgPrincipalConocenos{
     display: flex;
     img{
@@ -1102,6 +1178,8 @@ footer{
     margin-top: 25px;    
     margin-left: 25px;
   }
+
+                      /*******Estilos Contactanos*******/
   .contactanos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-size: 25px;
@@ -1109,16 +1187,18 @@ footer{
     margin-top: 80px;
     width: 80%;
     transform: translate(50px, -50px);  
-      p{
-        font-size: 20px;
-      }
-      form{
-        font-size: 20px;
-      }
+    p{
+      font-size: 20px;
     }
+    form{
+      font-size: 20px;
+    }   
   }
+}
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width:1200px) and (max-width:1366px){
+@media (min-width:1200px) and (max-width:1366px) {
+
+                /*******Estilos generales*******/
   #carouselExampleIndicators{
     display: flex;
     align-items: center;
@@ -1131,6 +1211,17 @@ footer{
     border-left: double $black;
     border-right: double $black;
   }
+  .fa-instagram-square{
+    color: #2b2f17; 
+    font-size: xx-large;
+    margin-left: 730px;
+  }
+  .fa-whatsapp-square{
+    color: #2b2f17;
+    font-size: xx-large;
+    }
+
+                /*******Estilos Productos*******/
   .imgPrincipalProd{
     display: flex;
     img{
@@ -1213,13 +1304,15 @@ footer{
     padding-top: 70px;
     margin-left: 40px;
   }
+
+                /*******Estilos Milzatips*******/
   .imgPrincipalTips{
     display: flex;
-      img{
-        width: 700px;
-        height: 210px;
-        margin: auto;
-      }
+    img{
+      width: 700px;
+      height: 210px;
+      margin: auto;
+    }
   }
   .titulosTips{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
@@ -1259,6 +1352,8 @@ footer{
       height: 214px;
     }
   }
+
+                    /*******Estilos Conocenos*******/
   .imgPrincipalConocenos{
     display: flex;
     img{
@@ -1283,6 +1378,8 @@ footer{
     margin-top: 25px;    
     margin-left: 25px;
   }
+
+                        /*******Estilos Contactanos*******/
   .contactanos{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-size: 25px;
@@ -1290,11 +1387,11 @@ footer{
     margin-top: 80px;
     width: 80%;
     transform: translate(50px, -50px);  
-      p{
-        font-size: 20px;
-      }
-      form{
-        font-size: 20px;
-      }
+    p{
+      font-size: 20px;
+    }
+    form{
+      font-size: 20px;
     }
   }
+}
