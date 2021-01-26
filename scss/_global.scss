@@ -121,8 +121,16 @@ footer{
   margin-bottom: 45px;
   overflow: hidden;
   position: relative;
-  transform: translate(150px, 10px);
-  width: 70%;
+  transform: translate(220px, 10px);
+  width: 60%;
+  h3{
+    color: black;
+    margin-left: -30px;
+    background-image: linear-gradient(#fbecb4, #FDFEF1);
+    font-family:  'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size:xx-large;
+  }
 }
 .fondoClaro{
   background-color: #fbecb4;
