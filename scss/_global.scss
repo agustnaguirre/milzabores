@@ -12,11 +12,10 @@
   src: url(../fonts/Gagalin/OTF/Gagalin-Regular.otf);
 }
 html{
-  width: 100%;
   body{
     background-image: url(../images/fondo-vegetales4.jpg);
     min-height: 1000px;
-    max-height: 2000px;
+    max-height: fit-content;
     position: relative;
   }
   main{
@@ -83,12 +82,10 @@ ul{
     padding: 15px;
     a{
       img{
-        border-color: black;
         height: 150px;
         width:150px;
       }
       img:hover{
-        border-color: black;
         transform: scale(1.5, 1.5);
         transition: 1s;
       }
@@ -134,6 +131,7 @@ footer{
   border-right: double black;
   max-width: 75%;
   padding-left: -20px;
+  height: 100%;
 }
 .fa-instagram-square{
   color: #2b2f17; 
@@ -190,7 +188,7 @@ footer{
   "prod1 prod2 prod3 prod4"
   "prod5 prod6 prod7 prod8";
   grid-template-columns: 300px 300px 300px 250px;
-  grid-template-rows: 300px 300px 300px 250px;
+  /*grid-template-rows: 300px 300px 300px 250px;*/
 }
 .prod1 {
   grid-area: prod1;
@@ -206,15 +204,19 @@ footer{
 }
 .prod5 {
   grid-area: prod5;
+  margin-bottom: 60px;
 }
 .prod6 {
   grid-area: prod6;
+  margin-bottom: 60px;
 }
 .prod7 {
   grid-area: prod7;
+  margin-bottom: 60px;
 }
 .prod8 {
   grid-area: prod8;
+  margin-bottom: 60px;
 }
 
                 /*******Estilos Milzatips*******/
@@ -256,6 +258,10 @@ footer{
   img{
     margin: auto;
   }
+  p{
+    height: 100%;
+    margin-bottom: 25px;
+  }
 }
 
                 /*******Estilos Conocenos*******/
@@ -281,22 +287,39 @@ footer{
 .articulosConocenos{
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
   font-size: 1.56rem;
-  margin-top: 25px;
+  margin-top: 40px;
   margin-left: 25px;
+  p{
+    padding-bottom: 190px;
+  }
 }
                 /*******Estilos Contactanos*******/
 .contactanos{
   font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
-  font-size: 1.56rem;
+  font-size: 1.25rem;
   font-weight: normal;
-  margin-top: 80px;
+  padding-top: 25px; 
+  padding-bottom: 50px;
   transform: translate(400px);  
   width: 80%;
   p{
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   form{
-    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+.gracias{
+  h1{
+    font-family:'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    padding-top: 80px;
+    padding-left: 60px;
+  }
+  h2{
+    font-family:'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    padding-bottom: 550px;
+    padding-left: 60px;
+
   }
 }
 
@@ -436,7 +459,6 @@ footer{
   .prod4 {
     grid-area: prod4;
     padding-top: 30px;
-    padding-left: 20px;
   }
   .prod5 {
     grid-area: prod5;
@@ -526,7 +548,8 @@ footer{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-size: 1.56rem;
     font-weight: normal;
-    margin-top: 80px;
+    padding-top: 60px; 
+    padding-bottom: 50px;
     transform: translate(50px, -50px);  
     width: 80%;
     p{
@@ -770,7 +793,8 @@ footer{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-size: 1.56rem;
     font-weight: normal;
-    margin-top: 80px;
+    padding-top: 60px; 
+    padding-bottom: 25px;
     width: 80%;
     transform: translate(50px, -50px);
     p{
@@ -996,7 +1020,8 @@ footer{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-size: 1.56rem;
     font-weight: normal;
-    margin-top: 80px;
+    padding-top: 75px; 
+    padding-bottom: 25px;
     transform: translate(50px, -50px);  
     width: 80%;
     p{
@@ -1200,7 +1225,8 @@ footer{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-size: 1.56rem;
     font-weight: normal;
-    margin-top: 80px;
+    padding-top: 80px; 
+    padding-bottom: 50px;
     transform: translate(50px, -50px);  
     width: 80%;
     p{
@@ -1212,7 +1238,7 @@ footer{
   }
 }
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width:1200px) and (max-width:1366px) {
+@media (min-width:1200px) and (max-width:1367px) {
 
                 /*******Estilos generales*******/
   .fondoClaro{
@@ -1396,7 +1422,8 @@ footer{
     font-family: 'GlacialIndifference', 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-size: 1.56rem;
     font-weight: normal;
-    margin-top: 80px;
+    padding-top: 80px; 
+    padding-bottom: 50px;
     transform: translate(50px, -50px);  
     width: 80%;
     p{
